@@ -29,4 +29,4 @@ clean :
 	dd if=$< ibs=256 of=$@ conv=sync
 
 .dts.dtbo:
-	$(DTC)  -O dtb -o $@ -b 0 -@ $<
+	$(DTC)  -O dtb -o $@ -b 0 $<
